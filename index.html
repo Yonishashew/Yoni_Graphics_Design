@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoni Graphics Designer | Logo, Poster & Video Editing in Ethiopia</title>
+  <meta name="description" content="Yoni Graphics Designer – Professional logo, poster, and video editing services. Creative and unique designs for businesses and creators in Ethiopia.">
+  <meta name="keywords" content="Graphic Design, Video Editing, Logo Design, Poster Design, Photo Editing, Yoni Graphics Designer">
+  <meta name="author" content="Yoni">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Yoni Graphics Designer",
+    "description": "Professional logo, poster, and video editing services in Ethiopia.",
+    "image": "20250323_220124 copy.png",
+    "telephone": "+251972744025",
+    "url": "https://yourusername.github.io/YoniGraphicsDesign/",
+    "sameAs": [
+      "https://www.instagram.com/yoniyonatan.4",
+      "https://t.me/yoniyonatan4",
+      "https://www.tiktok.com/@yoniyonatan4"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container">
+      <img src="20250323_220124 copy.png" alt="Yoni Graphics Designer Logo" width="150px" height="150px">
+      <h1>Yoni Graphics Designer</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <span class="auth-buttons">
+          <a href="#" onclick="openSignIn()">Sign In</a>
+          <a href="#" onclick="openSignUp()">Sign Up</a>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to Yoni Graphics Designer</h1>
+    <p>Creative designs & video editing at its best!</p>
+    <a href="#about" class="btn">Learn More</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m Yoni — a creative graphic designer and video editor.  
+        I specialize in making logos, posters, and videos that stand out!  
+        My goal is to help businesses and creators look professional and unique.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Services</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <h3>Graphic Design</h3>
+        <p>Logos, banners, posters, business cards.</p>
+      </div>
+      <div class="service-card">
+        <h3>Video Editing</h3>
+        <p>TikTok & YouTube videos editing with amazing effects.</p>
+      </div>
+      <div class="service-card">
+        <h3>Photo Editing</h3>
+        <p>Professional photo edits, retouching, and enhancements.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Need a logo, banner, or video edit? Let’s work together!</p>
+      <div class="contact-info">
+        <p><i class="fa-solid fa-phone"></i> <strong>+251 972 744 025</strong></p>
+        <p><i class="fa-solid fa-envelope"></i> <strong>yyonatan814@gmail.com</strong></p>
+        <p><i class="fa-brands fa-telegram"></i> <strong>@yoniyonatan4</strong></p>
+      </div>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section id="stats" class="stats">
+    <div class="container">
+      <div class="stats-container">
+        <div class="stat-card" onclick="showInfo('Happy Users')">
+          <i class="fa-solid fa-face-smile fa-3x"></i>
+          <h3>Happy Users</h3>
+          <p id="happy-users">1500+</p>
+        </div>
+        <div class="stat-card" onclick="showInfo('Completed Projects')">
+          <i class="fa-solid fa-check fa-3x"></i>
+          <h3>Completed Projects</h3>
+          <p>320+</p>
+        </div>
+        <div class="stat-card" onclick="showInfo('Awards Won')">
+          <i class="fa-solid fa-award fa-3x"></i>
+          <h3>Awards Won</h3>
+          <p>12+</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Yoni Graphics Design | All Rights Reserved</p>
+    <div class="social-links">
+      <a href="https://t.me/yoniyonatan4" target="_blank" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+      <a href="https://www.instagram.com/yoniyonatan.4" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@yoniyonatan4" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+    <p class="footer-contact"><i class="fa-solid fa-phone"></i> +251 972 744 025</p>
+  </footer>
+
+  <!-- Sign In / Sign Up Modals -->
+  <div id="signin-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeSignIn()">&times;</span>
+      <h2>Sign In</h2>
+      <input type="email" placeholder="Email" id="signin-email" />
+      <input type="password" placeholder="Password" id="signin-password" />
+      <div id="signin-msg" class="modal-msg"></div>
+      <button onclick="checkSignIn()">Sign In</button>
+    </div>
+  </div>
+
+  <div id="signup-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeSignUp()">&times;</span>
+      <h2>Sign Up</h2>
+      <input type="text" placeholder="Name" id="signup-name" />
+      <input type="email" placeholder="Email" id="signup-email" />
+      <input type="password" placeholder="Password" id="signup-password" />
+      <div id="signup-msg" class="modal-msg"></div>
+      <button onclick="checkSignUp()">Sign Up</button>
+    </div>
+  </div>
+
+  <!-- Info Modal -->
+  <div id="info-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeInfo()">&times;</span>
+      <p id="modal-text"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
